@@ -5,7 +5,7 @@
 	li $t1,1
 	li $t2,1
 	li $t3,1
-	
+	#use three loops to iterate all the possible combination of x,y,z and print all the result less than 400
 	loop1:
 	slt $t0,$t1,$t4
 	beq $t0,$zero,end1
@@ -38,7 +38,7 @@
 	add $a0,$t0,$a0 
 	mul $t0,$t2,$t3
 	add $a0,$t0,$a0 
-	slti $t0,$a0,401
+	slti $t0,$a0,400
 	beq $t0,0,no
 	li $v0,1
 	syscall

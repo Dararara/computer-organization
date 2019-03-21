@@ -1,8 +1,5 @@
 .include "macro_print_str.s"
 .data
-
-
-
 .text
 	li $t0, 10
 	li $v0, 5
